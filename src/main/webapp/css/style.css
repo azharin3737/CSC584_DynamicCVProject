@@ -1,0 +1,64 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Author     : AHMAD DANISH AZHARIN BIN AHMAD JOSLI
+*/
+
+* { box-sizing: border-box; }
+body { margin: 0; font-family: "Segoe UI", Arial, sans-serif; color: #222; background: #eef1f5; line-height: 1.5; }
+
+/* ---------- Buttons ---------- */
+.btn { display: inline-block; padding: 10px 18px; border: 0; border-radius: 6px; font-size: 15px;
+       cursor: pointer; text-decoration: none; }
+.btn-primary { background: #2b6cb0; color: #fff; }
+.btn-primary:hover { background: #1e4e8c; }
+.btn-secondary { background: #e2e8f0; color: #2d3748; }
+.btn-secondary:hover { background: #cbd5e0; }
+
+/* ---------- Form & error pages ---------- */
+.form-container { max-width: 760px; margin: 30px auto; background: #fff; padding: 30px 36px;
+                  border-radius: 10px; box-shadow: 0 2px 12px rgba(0,0,0,.08); }
+.form-container h1 { margin-top: 0; color: #2b6cb0; }
+.subtitle { color: #555; }
+.req { color: #c53030; }
+fieldset { border: 1px solid #d5dbe3; border-radius: 8px; margin: 20px 0; padding: 14px 18px; }
+legend { font-weight: 600; color: #2b6cb0; padding: 0 8px; }
+label { display: block; margin: 10px 0; font-size: 14px; font-weight: 500; }
+input, select, textarea { width: 100%; margin-top: 4px; padding: 9px 10px; border: 1px solid #c3cad4;
+                          border-radius: 6px; font: inherit; }
+input:focus, select:focus, textarea:focus { outline: 2px solid #90cdf4; border-color: #2b6cb0; }
+.actions { display: flex; gap: 12px; margin-top: 20px; }
+.error-box { border-left: 6px solid #c53030; }
+.error-box h1 { color: #c53030; }
+.error-list li { color: #9b2c2c; margin: 6px 0; }
+
+/* ---------- CV page ---------- */
+.toolbar { max-width: 800px; margin: 20px auto 0; display: flex; justify-content: space-between; }
+.cv { max-width: 800px; margin: 16px auto 40px; background: #fff; padding: 40px 48px;
+      box-shadow: 0 2px 12px rgba(0,0,0,.1); }
+.cv-header { text-align: center; border-bottom: 3px solid #2b6cb0; padding-bottom: 14px; margin-bottom: 18px; }
+.cv-header h1 { margin: 0; font-size: 32px; letter-spacing: 1px; }
+.cv-header h2 { margin: 4px 0 8px; font-weight: 400; color: #2b6cb0; font-size: 18px; }
+.contact span { margin: 0 10px; font-size: 14px; color: #444; }
+.cv h3 { text-transform: uppercase; font-size: 15px; letter-spacing: 1.5px; color: #2b6cb0;
+         border-bottom: 1px solid #cfd8e3; padding-bottom: 4px; margin: 22px 0 10px; }
+.entry-head { display: flex; justify-content: space-between; }
+.date, .muted { color: #666; font-size: 14px; }
+.pre { white-space: pre-line; }
+.skill-label { margin: 8px 0 4px; font-weight: 600; font-size: 14px; }
+.chips { list-style: none; padding: 0; margin: 0 0 6px; display: flex; flex-wrap: wrap; gap: 8px; }
+.chips li { background: #ebf4ff; color: #1e4e8c; padding: 4px 12px; border-radius: 14px; font-size: 13px; }
+.no-data { text-align: center; margin-top: 60px; }
+
+@media (max-width: 600px) { .cv { padding: 22px; } .entry-head { flex-direction: column; } }
+
+/* ---------- Print ---------- */
+@media print {
+    body { background: #fff; }
+    .no-print { display: none !important; }
+    .cv { box-shadow: none; margin: 0; padding: 0; max-width: 100%; }
+    .chips li { border: 1px solid #999; background: none; color: #000; }
+    a { color: #000; text-decoration: none; }
+}

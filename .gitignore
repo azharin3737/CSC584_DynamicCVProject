@@ -1,0 +1,6 @@
+target/
+nbproject/private/
+nb-configuration.xml
+*.class
+*.log
+.DS_Store
